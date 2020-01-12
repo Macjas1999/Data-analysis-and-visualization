@@ -1,12 +1,23 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import aseegg as ag
-import csv
+import pandas as pd
+import os
 
-with open('masterCSV.csv', 'r') as csvfile:
-    csvreader = csv.reader(csvfile, delimiter=',')
+os.getcwd()
+print(os.getcwd())
+os.listdir()
+print(os.listdir())
 
-    for row in csvreader:
-        print(row[0])
-        print(row[1])
-        print(row[2])
+master = 'masterCSV.csv'
+
+data = pd.read_csv(master)
+
+data.info()
+print(data.shape)
+print(data.columns)
+print(data.index)
+print(data.head(2))
+data.describe()
+print(data.describe())
+data['country']
+data.country
+print(data.country
+)

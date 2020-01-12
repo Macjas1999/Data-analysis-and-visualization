@@ -1,9 +1,16 @@
-import csv
+import pandas as pd
 
-with open('masterCSV.csv', 'r') as csvfile:
-    csvreader = csv.reader(csvfile, delimiter=',')
+data = pd.read_csv('masterCSVfmfull.csv')
 
-    for row in csvreader:
-        print(row[0])
-        print(row[1])
-        print(row[2])
+
+#suicides_ratio =suicides/100k pop
+
+data.info()
+print(data.shape)
+print(data.columns)
+print(data.index)
+data.describe()
+print(data.describe())
+data['country']
+data.country
+print(data.country)
