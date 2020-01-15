@@ -1,0 +1,32 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+dat_all = pd.read_csv('masterCSVfmfull.csv', index_col = ['country'])
+rows_albania = dat_all.loc[""]
+
+plt.style.use('fivethirtyeight')
+
+x = ['']
+
+y0 = []
+
+plt.plot(ages_x, py_dev_y, label='')
+
+y1 = ['']
+
+plt.plot(ages_x, js_dev_y, label='')
+
+y2 = []
+
+plt.plot(ages_x, dev_y, color='#444444', linestyle='--', label='')
+
+plt.xlabel('')
+plt.ylabel('')
+plt.title('')
+
+plt.legend()
+
+plt.savefig('.png')
+
+plt.show()
