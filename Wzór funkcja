@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-dat_all = pd.read_csv('masterCSVfmfull.csv', index_col = ['country'])
+dat_all = pd.read_csv('masterCSVfmfull.csv', columns = ['year','suicide_no'])
 rows_albania = dat_all.loc[""]
 
 plt.style.use('fivethirtyeight')

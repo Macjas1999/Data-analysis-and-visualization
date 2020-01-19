@@ -1,18 +1,18 @@
 import numpy as np
+import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
-lista = [1,2,3]
-lista_np= np.array([list])
-print(lista)
+os.getcwd()
+os.listdir()
+file = 'lista_eu.csv'
 
-matrix=np.array(([1,2],[3,4]))
-print(matrix)
+data = pd.read_csv(file)
 
-df= pd.DataFrame({
-'ColA': [1, 2, 3],
-'ColB': [4, 5, 6],
-'ColC': [7, 8, 9]},
-index = ['x', 'y', 'z'])
+print(data.shape)
+print(data.columns)
+print(data.index)
 
-print(df)
-type(df)
+Y = data['country'].unique()
+
+print(Y)
